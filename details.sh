@@ -1,7 +1,15 @@
 #!/bin/bash
 
 # filename
-FILE="filename"
+#FILE="filename"
+
+read -p "Enter filename: " FILE
+
+#check if exists
+if [[ ! -f "$FILE" ]]; then
+	echo "File not found"
+	exit 1
+fi
 
 # Display file information
 file "$FILE"

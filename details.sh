@@ -25,3 +25,7 @@ hexdump -C "$FILE" | head -n 10
 
 # last hex data
 hexdump -C "$FILE" | tail -n 10
+
+#objdump
+objdump -d "$FILE"
+
